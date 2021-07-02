@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 def hello():
     name = input('What is your name?')
     number = str(random.randint(2, 6))
-    print('Hello ' + name + ', \n Here is a random number: ' + number)
+    print('Hello ' + name + ', \nHere is a random number: ' + number)
     return
 
 
@@ -43,3 +43,48 @@ def NYTtitles():
                 file.write(title.text.strip() + '\n')
     print('file ' + filename + ' saved')
     return
+
+    # read list of names from files
+    # count how many times each name repeats
+    # save to dictionary and print it
+def listFromFile():
+    names = {} #init a dictionary
+    filename = input("File to read: ")
+    with open(filename, 'r') as f:
+        # contents = f.read()
+        # print(contents)
+        for name in f:
+            # extract & strip the element 
+            #name = name.strip() #for names file
+            name = extractCategory(name)
+            if name in names:
+                names[name] +=1
+            else :
+                names[name] = 1
+    print (names)
+    return
+    
+    
+def extractCategory(line):
+    spl = line.rsplit('/', 1) #beware of special char
+    spli = spl[0].rsplit('/', 1)
+    return spli[1]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
