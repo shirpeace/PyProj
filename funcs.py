@@ -71,7 +71,9 @@ def extractCategory(line):
     return spli[1]
     
     
-    
+def piramid(x):
+    #print a piramid of stars, x wide
+    return
     
     
     
