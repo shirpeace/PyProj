@@ -13,4 +13,8 @@ url = 'http://github.com'
 #funcs.NYTtitles()
 
 #read from file
-funcs.listFromFile()
+#funcs.listFromFile()
+
+#piramid of stars
+num = int(input("Size of piramid? "))
+funcs.piramid(num)

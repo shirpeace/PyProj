@@ -73,6 +73,11 @@ def extractCategory(line):
     
 def piramid(x):
     #print a piramid of stars, x wide
+    size = x
+    while size > 0 :
+        print(' '*(x-size) + '* '*size)
+        #print('* '*size + '\n')
+        size -=1
     return
     
     
