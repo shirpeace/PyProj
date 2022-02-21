@@ -16,5 +16,9 @@ url = 'http://github.com'
 #funcs.listFromFile()
 
 #piramid of stars
-num = int(input("Size of piramid? "))
-funcs.piramid(num)
+# num = int(input("Size of piramid? "))
+# funcs.piramid(num)
+
+#birthdays
+funcs.bdaysMain()
+
